@@ -1,11 +1,14 @@
 import React from 'react'
-
-function BookItem({ image, name, price }) {
+import { Link } from 'react-router-dom';
+function BookItem({ image, date, time }) {
     return (
         <div className='bookItem'>
             <div style={{ backgroundImage: `url(${image})` }}> </div>
-            <h1> {name} </h1>
-            <p> ${price} </p>
+            <h1> {date} </h1>
+            <p> {time} </p>
+            <Link to='/BookForm'>
+                <button> BOOK NOW </button>
+            </Link>
         </div>
     )
 }

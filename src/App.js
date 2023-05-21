@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Book from './pages/Book';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import BookForm from './pages/BookForm';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/book" element={<Book />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/bookform" element={<BookForm />} />
         </Routes>
         <Footer />
       </Router>
