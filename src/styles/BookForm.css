@@ -5,10 +5,58 @@
     align-items: center;
     flex-direction: column;
 }
-.bookform form{
-    width: 90%;
-}
 
 .bookform h1 {
     font-size: 60px;
  }
+
+.bookform form {
+display: flex;
+flex-direction: column;
+width: 90%;
+height: auto;
+padding: 30px;
+}
+
+.bookform form input {
+height: 40px;
+width: 80%;
+border: none;
+border-bottom: 1px solid #121619;
+color: black;
+}
+
+.bookform form textarea {
+margin-top: 15px;
+height: 70px;
+width: 80%;
+border: none;
+border-bottom: 1px solid #121619;
+color: black;
+}
+.bookform input::placeholder,
+textarea::placeholder {
+font-weight: bold;
+color: black;
+font-family: Arial, Helvetica, sans-serif;
+}
+.bookform form input:focus,
+textarea:focus {
+outline: none;
+}
+
+.bookform form label {
+margin-top: 15px;
+color: grey;
+}
+
+.bookform form button {
+margin-top: 40px;
+width: 140px;
+height: 40px;
+border: none;
+background-color: #121619;
+color: whitesmoke;
+font-size: 15px;
+cursor: pointer;
+}
